@@ -1,0 +1,38 @@
+set term pdfcairo color
+
+
+set output 'Joint_Radius.pdf'
+
+set xlabel 'time'
+set ylabel 'radius'
+set grid
+pl 'InitialData.dat' u 1:2 notitle w l lw 2, 'shiftedRealData.dat' u 1:2 notitle w l lw 2
+
+unset output
+
+set output 'Joint_Angle.pdf'
+
+set xlabel 'time'
+set ylabel 'angle'
+set grid
+pl 'InitialData.dat' u 1:3 notitle w l lw 2, 'shiftedRealData.dat' u 1:3 notitle w l lw 2
+
+unset output
+
+set output 'Joint_Volume.pdf'
+
+set xlabel 'time'
+set ylabel 'Volume'
+set grid
+pl 'InitialData.dat' u 1:4 notitle w l lw 2, 'shiftedRealData.dat' u 1:4 notitle w l lw 2
+
+unset output
+
+set output 'Joint_Area.pdf'
+
+set xlabel 'time'
+set ylabel 'Area'
+set grid
+pl 'InitialData.dat' u 1:5 notitle w l lw 2, 'shiftedRealData.dat' u 1:5 notitle w l lw 2
+
+unset output
